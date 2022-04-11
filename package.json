@@ -2,13 +2,19 @@
   "name": "PernDemo",
   "version": "1.0.0",
   "description": "InMotion PERN Template",
+  "proxy": "https://localhost:5000",
   "main": "src/index.js",
   "author": "",
   "private": true,
   "scripts": {
     "lint": "eslint src",
     "webpack": "webpack -w --mode=development",
-    "launch": "yarn eslint && yarn build && yarn start"
+    "launch": "yarn eslint && yarn build && yarn start",
+    "start": "react-scripts start",
+    "start-api": "cd api && Scripts/flask run --no-debugger",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "browserslist": [
     "last 1 chrome version",
